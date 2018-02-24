@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-
+Plugin 'wincent/command-t'
 " Finish Vundle
 call vundle#end()
 filetype plugin indent on
