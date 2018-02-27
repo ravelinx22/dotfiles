@@ -10,6 +10,9 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'wincent/command-t'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
+
 " Finish Vundle
 call vundle#end()
 filetype plugin indent on
@@ -26,6 +29,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set number
-
+set backspace=indent,eol,start
 " Key mappings
 imap jj <Esc>
