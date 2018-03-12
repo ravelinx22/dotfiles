@@ -12,6 +12,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'wincent/command-t'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jiangmiao/auto-pairs'
 
 " Finish Vundle
 call vundle#end()
