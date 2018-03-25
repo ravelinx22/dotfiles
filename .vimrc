@@ -16,19 +16,22 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-fugitive'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Finish Vundle
 call vundle#end()
 filetype plugin indent on
-
-" Colors
-colorscheme Benokai
 
 " My configuration
 set autoindent
 set textwidth=80
 
 syntax enable
+set background=dark
+colorscheme solarized
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
