@@ -15,6 +15,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'tpope/vim-fugitive'
 
 " Finish Vundle
 call vundle#end()
