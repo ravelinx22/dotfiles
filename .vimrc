@@ -20,6 +20,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ryanoasis/vim-devicons'
 
 " Finish Vundle
 call vundle#end()
@@ -28,6 +29,7 @@ filetype plugin indent on
 " My configuration
 set autoindent
 set textwidth=80
+set encoding=UTF-8
 
 syntax enable
 set background=dark
