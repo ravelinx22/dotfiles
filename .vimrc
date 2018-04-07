@@ -21,6 +21,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " Finish Vundle
 call vundle#end()
