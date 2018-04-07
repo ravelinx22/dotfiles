@@ -13,3 +13,9 @@ And then:
 ```
 ./bootstrap.sh
 ```
+
+Also install Tmux for better development: 
+
+```
+brew install tmux
+```
