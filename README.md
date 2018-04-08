@@ -14,8 +14,10 @@ And then:
 ./bootstrap.sh
 ```
 
-Also install Tmux for better development: 
+Install Tmux: 
 
 ```
 brew install tmux
 ```
+
+Dont forget to map your caps lock key to Ctrl
