@@ -20,4 +20,4 @@ Install Tmux:
 brew install tmux
 ```
 
-Dont forget to map your caps lock key to Ctrl
+Don't forget to map your caps lock key to Ctrl
