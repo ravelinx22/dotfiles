@@ -9,7 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
-Plugin 'wincent/command-t'
+Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jiangmiao/auto-pairs'
@@ -22,6 +22,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'vim-ruby/vim-ruby'
 
 " Finish Vundle
 call vundle#end()
@@ -31,6 +32,16 @@ filetype plugin indent on
 set autoindent
 set textwidth=80
 set encoding=UTF-8
+
+" MUComplete
+set completeopt+=menuone
+set completeopt+=noselect
+set completeopt+=noinsert
+set shortmess+=c 
+let g:mucomplete#enable_auto_at_startup = 1
+
+" CTRLP
+let g:ctrlp_show_hidden = 1
 
 syntax enable
 set background=dark
@@ -42,3 +53,6 @@ set number
 set backspace=indent,eol,start
 " Key mappings
 imap jj <Esc>
+
+" Disable automatic comment
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
