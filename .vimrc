@@ -23,6 +23,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'lifepillar/vim-mucomplete'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
@@ -60,7 +61,7 @@ imap jj <Esc>
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 " UltiSnips
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<s-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetDirectories=[$HOME . "/dotfiles/snipps"]
