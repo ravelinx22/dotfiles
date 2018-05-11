@@ -1,0 +1,114 @@
+snippet comp "Creates an empty React component"
+import React, { Component  } from "react";
+
+export default class ${1:App} extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		};
+	}
+
+	componentDidMount() {
+	}
+
+	render() {
+		return (
+			<h1>Hello World</h1>
+		 );
+	}
+}
+endsnippet
+
+snippet metComp "Creates an empty React component for meteor"
+import React, { Component  } from "react";
+import { Container, Row, Col, Button  } from "reactstrap";
+import { Meteor } from "meteor/meteor";
+import { withRouter } from "react-router-dom";
+import { withTracker } from "meteor/react-meteor-data";
+
+export default class ${1:App} extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		};
+	}
+
+	componentDidMount() {
+	}
+
+	render() {
+		return (
+			<h1>Hello World</h1>
+		 );
+	}
+}
+endsnippet
+
+snippet apiCol "Creates a test api collection for meteor"
+import { Meteor } from "meteor/meteor";
+import { Mongo } from "meteor/mongo";
+import { check } from "meteor/check";
+
+export const ${1:test} = new Mongo.Collection("chats");
+
+if (Meteor.isServer) {
+	Meteor.publish("${2:test}", () => {
+			return $1.find({});
+	});
+}
+
+Meteor.methods({
+	"$2.insert"(object) {
+		check(object, {
+			testId: String,					
+		});
+
+		$1.insert({
+			testId: object.testId,	
+		})			
+	},
+	
+	"$2.message"(testId) {
+		check(testId, String);
+			$1.update({ _id: testId  }, { $set: { testAttr: ""  }
+		});				
+	},
+	"$2.remove"(testId) {
+		check(testId, String);
+			$1.remove(testId);				
+		},
+});
+endsnippet
+
+snippet withComp "Creates a React component with withTracker"
+import React, { Component } from "react";
+import { Container, Row, Col, Button } from "reactstrap";
+import { Meteor } from "meteor/meteor";
+import { withRouter } from "react-router-dom";
+import { withTracker } from "meteor/react-meteor-data";
+
+class ${1:test} extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+
+		}	
+	}
+
+	componentDidMount() {
+	}
+
+	render() {
+		return(
+			<h1>Hello World</h1>					
+		);			
+	}
+}
+
+export default withTracker((props) => {
+	Meteor.subscribe("tests") ;
+	return {
+			testData: Test.find({})	
+	};
+})($1);
+endsnippet
