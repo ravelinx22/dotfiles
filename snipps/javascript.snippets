@@ -49,10 +49,10 @@ import { Meteor } from "meteor/meteor";
 import { Mongo } from "meteor/mongo";
 import { check } from "meteor/check";
 
-export const ${1:test} = new Mongo.Collection("chats");
+export const ${1:test} = new Mongo.Collection("${2:test}");
 
 if (Meteor.isServer) {
-	Meteor.publish("${2:test}", () => {
+	Meteor.publish("$2", () => {
 			return $1.find({});
 	});
 }
@@ -68,7 +68,7 @@ Meteor.methods({
 		})			
 	},
 	
-	"$2.message"(testId) {
+	"$2.update"(testId) {
 		check(testId, String);
 			$1.update({ _id: testId  }, { $set: { testAttr: ""  }
 		});				
