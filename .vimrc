@@ -23,7 +23,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'lifepillar/vim-mucomplete'
+" Plugin 'lifepillar/vim-mucomplete'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
@@ -37,11 +37,11 @@ set textwidth=80
 set encoding=UTF-8
 
 " MUComplete
-set completeopt+=menuone
-set completeopt+=noselect
-set completeopt+=noinsert
-set shortmess+=c 
-let g:mucomplete#enable_auto_at_startup = 1
+" set completeopt+=menuone
+" set completeopt+=noselect
+" set completeopt+=noinsert
+" set shortmess+=c 
+" let g:mucomplete#enable_auto_at_startup = 1
 
 " CTRLP
 let g:ctrlp_show_hidden = 1
